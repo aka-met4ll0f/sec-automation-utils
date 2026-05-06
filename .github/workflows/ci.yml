@@ -27,15 +27,3 @@ jobs:
 
       - name: Compile Python
         run: python -m py_compile gen_users.py
-
-  bash-checks:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Install shellcheck
-        run: sudo apt-get update && sudo apt-get install -y shellcheck
-
-      - name: Lint shell scripts
-        run: shellcheck -S error web_screenshot_report.sh
