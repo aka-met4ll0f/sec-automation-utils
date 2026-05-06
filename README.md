@@ -13,6 +13,12 @@ Scripts de automatización de datos y generación de evidencias visuales.
 - `gen_users.py`: genera usuarios desde columna de nombres en CSV/XLSX.
 - `web_screenshot_report.sh`: toma capturas de pantalla y genera índice HTML navegable.
 
+## Resumen rápido
+| Script | Entrada | Salida | Uso típico |
+|---|---|---|---|
+| `gen_users.py` | CSV/XLSX con columna de nombres | `users.txt` + `skipped.txt` | Normalización y generación de usuarios |
+| `web_screenshot_report.sh` | Lista de hosts + carpeta destino | Capturas `.png` + `index.html` | Evidencia visual de superficies web |
+
 ## Requisitos
 - Python 3.10+
 - Dependencias: `pip install -r requirements.txt`
