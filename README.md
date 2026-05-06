@@ -1,13 +1,10 @@
 # sec-automation-utils
 
 ![CI](https://github.com/aka-met4ll0f/sec-automation-utils/actions/workflows/ci.yml/badge.svg)
+![Tipo](https://img.shields.io/badge/Tipo-Automation-orange)
 
 ## Descripción
 Scripts de automatización de datos y generación de evidencias visuales.
-
-## Autor
-- Autor: **met4ll0f**
-- GitHub: `https://github.com/aka-met4ll0f`
 
 ## Scripts incluidos
 - `gen_users.py`: genera usuarios desde columna de nombres en CSV/XLSX.
@@ -33,6 +30,10 @@ Scripts de automatización de datos y generación de evidencias visuales.
    - `chmod +x web_screenshot_report.sh`
    - `./web_screenshot_report.sh hosts.txt salida_screens`
 4. Revisa archivos generados (`users.txt`, `skipped.txt`, `index.html`).
+
+## Autor
+- Autor: **met4ll0f**
+- GitHub: `https://github.com/aka-met4ll0f`
 
 ## Aviso legal
 Usar solo con permisos del propietario de datos/sitios o en laboratorio/CTF. El creador no se hace responsable por el mal uso.
