@@ -1,6 +1,6 @@
-# data-automation-utils
+# sec-automation-utils
 
-![CI](https://github.com/aka-met4ll0f/data-automation-utils/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/aka-met4ll0f/sec-automation-utils/actions/workflows/ci.yml/badge.svg)
 
 Scripts de automatización de datos y generación de evidencias visuales.
 
