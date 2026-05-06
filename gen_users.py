@@ -8,6 +8,15 @@ from pathlib import Path
 import pandas as pd
 
 
+BANNER = r"""
+  ____ _____ _   _   _   _ ____  _____ ____  ____
+ / ___| ____| \ | | | | | / ___|| ____|  _ \/ ___|
+| |  _|  _| |  \| | | | | \___ \|  _| | |_) \___ \
+| |_| | |___| |\  | | |_| |___) | |___|  _ < ___) |
+ \____|_____|_| \_|  \___/|____/|_____|_| \_\____/
+"""
+
+
 def strip_accents(s: str) -> str:
     return "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c))
 
@@ -51,8 +60,9 @@ def read_table(input_path: Path) -> pd.DataFrame:
 
 
 def main():
+    print(BANNER)
     print("[DISCLAIMER] Uso autorizado de datos.")
-    print("Autor: met4ll0f | https://github.com/met4ll0f")
+    print("Autor: met4ll0f | https://github.com/aka-met4ll0f")
     ap = argparse.ArgumentParser(description="Genera usuarios nombre.apellido")
     ap.add_argument("input")
     ap.add_argument("-c", "--column", default="Nombre")

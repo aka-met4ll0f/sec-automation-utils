@@ -2,7 +2,19 @@
 set -euo pipefail
 
 # DISCLAIMER: uso autorizado únicamente.
-# Autor: met4ll0f | https://github.com/met4ll0f
+# Autor: met4ll0f | https://github.com/aka-met4ll0f
+
+print_banner() {
+  cat <<'EOF'
+__        _______ ____    ____   ____ ____  _____ _____ _   _
+\ \      / / ____| __ )  / ___| / ___|  _ \| ____| ____| \ | |
+ \ \ /\ / /|  _| |  _ \  \___ \| |   | |_) |  _| |  _| |  \| |
+  \ V  V / | |___| |_) |  ___) | |___|  _ <| |___| |___| |\  |
+   \_/\_/  |_____|____/  |____/ \____|_| \_\_____|_____|_| \_|
+EOF
+}
+
+print_banner
 
 if [[ $# -ne 2 ]]; then
   echo "Uso: $0 <host_list.txt> <output_directory>"
@@ -19,7 +31,7 @@ cat > "$OUTPUT_DIR/index.html" <<EOF
 <!DOCTYPE html><html><head><meta charset="UTF-8"><title>Web Screenshot Report</title></head>
 <body style="background:#111;color:#eee;font-family:monospace">
 <h1>Web Screenshot Report - met4ll0f</h1>
-<p><a href="https://github.com/met4ll0f">GitHub</a></p>
+<p><a href="https://github.com/aka-met4ll0f">GitHub</a></p>
 <ul>
 EOF
 
