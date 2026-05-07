@@ -1,33 +1,33 @@
 # username-generator
 
 ![CI](https://github.com/aka-met4ll0f/username-generator/actions/workflows/ci.yml/badge.svg)
-![Tipo](https://img.shields.io/badge/Tipo-Automation-orange)
+![Type](https://img.shields.io/badge/Type-Automation-orange)
 
-## Descripción
-Herramienta para generar usuarios desde archivos CSV/XLSX de forma consistente.
+## Description
+Tool to generate usernames from CSV/XLSX files in a consistent format.
 
-## Scripts incluidos
-- `gen_users.py`: genera usuarios desde columna de nombres en CSV/XLSX.
+## Included scripts
+- `gen_users.py`: generates usernames from a name column in CSV/XLSX files.
 
-## Resumen rápido
-| Script | Entrada | Salida | Uso típico |
+## Quick summary
+| Script | Input | Output | Typical use |
 |---|---|---|---|
-| `gen_users.py` | CSV/XLSX con columna de nombres | `users.txt` + `skipped.txt` | Normalización y generación de usuarios |
+| `gen_users.py` | CSV/XLSX with name column | `users.txt` + `skipped.txt` | Username normalization and generation |
 
-## Requisitos
+## Requirements
 - Python 3.10+
-- Dependencias: `pip install -r requirements.txt`
+- Dependencies: `pip install -r requirements.txt`
 
-## Uso
-1. Instala dependencias:
+## Usage
+1. Install dependencies:
    - `pip install -r requirements.txt`
-2. Genera usuarios desde Excel/CSV:
-   - `python3 gen_users.py empleados.xlsx -c "Nombre" -o users.txt --ascii --lower --dedupe`
-3. Revisa archivos generados (`users.txt`, `skipped.txt`).
+2. Generate usernames from Excel/CSV:
+   - `python3 gen_users.py employees.xlsx -c "Name" -o users.txt --ascii --lower --dedupe`
+3. Review generated files (`users.txt`, `skipped.txt`).
 
-## Autor
-- Autor: **met4ll0f**
+## Author
+- Author: **met4ll0f**
 - GitHub: `https://github.com/aka-met4ll0f`
 
-## Aviso legal
-Usar solo con permisos del propietario de datos/sitios o en laboratorio/CTF. El creador no se hace responsable por el mal uso.
+## Legal Notice
+Use only with data/target owner permission or in a controlled lab/CTF. The creator is not responsible for misuse.
